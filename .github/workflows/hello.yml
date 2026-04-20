@@ -9,6 +9,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Clone repository
+        run: git clone https://github.com/Maulik-0653/Action
+
       - name: list files
         run: ls -la
            
