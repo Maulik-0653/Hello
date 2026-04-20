@@ -3,16 +3,12 @@ name: hello
 on: push
 
 jobs:
-  hello-hanu:
+  test:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Print message
-        run: echo "Hello Hanu!"
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-  hello-maulik:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Print message
-        run: echo "Hello Maulik!"    
+      - name: list files
+        run: ls -la
+           
