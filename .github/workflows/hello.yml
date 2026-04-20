@@ -1,18 +1,17 @@
-name: hello1
+name: hello
+
 on: push
 
-job 1:
-  say-hello:
+jobs:
+  hello-hanu:
     runs-on: ubuntu-latest
 
     steps:
       - name: Print message
-        run: echo "Hello Hanu!" 
+        run: echo "Hello Hanu!"
 
-job 2:
-  say-hello:
-    runs-on: ubuntu-latest    
-
+  hello-maulik:
+    runs-on: ubuntu-latest
 
     steps:
       - name: Print message
